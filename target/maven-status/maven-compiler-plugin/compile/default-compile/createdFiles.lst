@@ -1,0 +1,10 @@
+pages\BasePage.class
+utils\Screenshots.class
+components\HeaderTop.class
+pages\LoginPage.class
+driverManager\DriverManager.class
+components\HeaderNav.class
+utils\RandomEmail.class
+utils\UserConfig.class
+pages\RegistrasionPage.class
+pages\MainPage.class

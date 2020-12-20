@@ -1,0 +1,5 @@
+runners\Runner.class
+stepdefs\MainPageStepdefs.class
+stepdefs\RegistrasionPageStepdefs.class
+stepdefs\HeaderTopStepdefs.class
+hooks\Hooks.class
