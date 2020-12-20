@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -68,11 +69,13 @@ public class MainPage extends BasePage {
     }
 
     public int checkAmountLang() {
+        log.info("checkAmountLang");
         log.info("Found {} elements", languagesList.size());
         return languagesList.size();
     }
 
     public boolean checkLangExist(String lang) {
+        log.info("checkLangExist");
         for (int i = 0; i < languagesList.size(); i++) {
             if (languagesList.get(i).getText().equals(lang)) {
                 return true;
@@ -85,17 +88,28 @@ public class MainPage extends BasePage {
         return productBox.getAllItems(productList);
     }
 
-    /*public boolean checkAllProductsHasName(String... productNames) {
-        List<ProductBox> allProductBoxesFromPage = productBox.getAllItems(productBox);
-        for (String productName : productNames) {
-            for (ProductBox box : allProductBoxesFromPage) {
-                if (box.getName().contains(productName)){
-                    return true;
-                } else{
-                    return false;
-                }
-}
-        }return true;
-    }*/
-}
+   public boolean checkAllProductsHasName() {
+       log.info("checkAllProductsHasName");
+       List<ProductBox> allProductBoxesFromPage = getAllProducts();
+       List<ProductBox> productsWithoutName = new ArrayList<>();
+       for (ProductBox product : allProductBoxesFromPage){
+             if(product.getName().isEmpty()){
+               productsWithoutName.add(product);
+           }
+       }
+       return productsWithoutName.size()==0;
+   }
+    public boolean checkAllPricesAreMoreNull(){
+        log.info("checkAllPricesAreMoreNull");
+        List<ProductBox> allProductBoxesFromPage = getAllProducts();
+        List<ProductBox> notNullPriseProducts = new ArrayList<>();
+        for (ProductBox product : allProductBoxesFromPage){
+            if(product.getPrice()<= 0){
+                notNullPriseProducts.add(product);
+            }
+        }
+        return notNullPriseProducts.size()==0;
+    }
+    }
+
 

@@ -81,12 +81,10 @@ public class RegistrasionPage extends BasePage {
 
     public void clickCheckBoxCustomer() {
         checkBoxCustomer.click();
-
     }
 
     public void clickCheckBoxSignUp() {
         checkBoxSignUp.click();
-
     }
 
     public void clickCheckBoxAgree() {

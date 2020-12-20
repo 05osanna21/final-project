@@ -51,6 +51,11 @@ public class MainPageStepdefs {
 
     @Then("I see that every product has name")
     public void iSeeThatEveryProductHasName() {
+        Assertions.assertThat(mainPage.checkAllProductsHasName());
+    }
 
-            }
+    @Then("I see that every price is more null")
+    public void iSeeThatEveryPriceIsMoreNull() {
+        Assertions.assertThat(mainPage.checkAllPricesAreMoreNull());
+    }
 }

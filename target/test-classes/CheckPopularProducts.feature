@@ -3,4 +3,5 @@ Feature: Check popular products
      Given I open Main Page
      When  I see that 8 products exist in POPULAR PRODUCTS section
      Then  I see that every product has name
+     Then I see that every price is more null
 

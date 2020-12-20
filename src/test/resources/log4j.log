@@ -324,3 +324,16 @@
 [INFO ] 2020-12-20 15:52:53 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
 [INFO ] 2020-12-20 16:25:23 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
 [INFO ] 2020-12-20 16:25:23 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-20 16:43:57 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-20 16:43:57 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-20 17:19:29 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-20 17:19:29 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-20 17:19:42 MainPage:100 :checkAllPricesAreMoreNull - message:checkAllPricesArePositive
+[INFO ] 2020-12-20 17:31:43 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-20 17:31:43 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-20 17:31:54 MainPage:92 :checkAllProductsHasName - message:checkAllProductsHasName
+[INFO ] 2020-12-20 17:31:55 MainPage:103 :checkAllPricesAreMoreNull - message:checkAllPricesAreMoreNull
+[INFO ] 2020-12-20 17:31:59 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-20 17:31:59 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-20 17:32:38 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-20 17:32:38 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /home/user/.cache/selenium/chromedriver/linux64/87.0.4280.88/chromedriver

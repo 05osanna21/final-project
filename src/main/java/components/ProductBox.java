@@ -17,14 +17,14 @@ public class ProductBox {
     private String name;
     private String regularPrice;
     private String discountPercentage;
-    private String price;
+    private double price;
     private WebElement productFlag;
 
     public ProductBox(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    public ProductBox(WebElement image, String name, String regularPrice, String discountPercentage, String price, WebElement productFlag) {
+    public ProductBox(WebElement image, String name, String regularPrice, String discountPercentage, double price, WebElement productFlag) {
         this.image = image;
         this.name = name;
         this.regularPrice = regularPrice;
@@ -41,7 +41,7 @@ public class ProductBox {
             WebElement image = boxElement.findElement(By.xpath("//div[contains(@class, 'thumbnail-container')]//a//img"));
             String regularPrice = boxElement.findElement(By.xpath("//div//span[@class='regular-price']")).getText();
             String discountPercentage = boxElement.findElement(By.xpath("//div//span[@class='discount-percentage discount-product']")).getText();
-            String price = boxElement.findElement(By.xpath("//div//span[@class='price']")).getText();
+            double price = Double.parseDouble(boxElement.findElement(By.xpath("//div//span[@class='price']")).getText().substring(1));
             WebElement productFlag = boxElement.findElement(By.xpath("//div//ul//li[@class='product-flag new']"));
         ProductBox productBox = new ProductBox(image,name,regularPrice,discountPercentage,price,productFlag);
         productBoxes.add(productBox);

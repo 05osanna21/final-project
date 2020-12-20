@@ -59,7 +59,7 @@ public class HeaderTop extends BasePage {
 
     public List<String> getSubMenuItems(WebElement category) {
         List<String> visibleCategories = new ArrayList<>();
-        List<WebElement> subCategories = clothesCategory.findElements(By.xpath("./..//div//a"));
+        List<WebElement> subCategories = category.findElements(By.xpath("./..//div//a"));
         for (int i = 0; i < subCategories.size(); i++) {
             String text = subCategories.get(i).getText();
             visibleCategories.add(text);
